@@ -17,12 +17,14 @@ Step 6: Perform exact inference using the defined evidence and query variables.<
 Step 7: Print the results.<br>
 
 ## Program :
+Developed By : kavya k
+Register By : 212222230065
 ```
 from pgmpy.models import BayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 from pgmpy.inference import VariableElimination
 network=BayesianNetwork([('Burglary','Alarm'),('Earthquake','Alarm'),
-                          ('Alarm','JohnCalls'),
+                         ('Alarm','JohnCalls'),
                          ('Alarm','MarryCalls')])
 cpd_burglary=TabularCPD(variable='Burglary',variable_card=2,values=[[0.999],[0.001]])
 cpd_earthquake=TabularCPD(variable='Earthquake',variable_card=2,values=[[0.998],[0.002]])
