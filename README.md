@@ -18,6 +18,7 @@ Step 7: Print the results.<br>
 
 ## Program :
 Developed By : kavya k
+
 Register By : 212222230065
 ```
 from pgmpy.models import BayesianNetwork
